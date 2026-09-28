@@ -34,3 +34,15 @@ pnpm build
 ```
 
 Le rendu des étiquettes se trouve dans `app/page.tsx` et les règles d'impression A4 dans `app/globals.css`.
+
+## Déploiement GitHub Pages
+
+Le workflow `.github/workflows/deploy-pages.yml` vérifie le code, génère un export statique dans `out/`, puis le publie à chaque push sur `main`. Il peut aussi être lancé manuellement depuis l'onglet **Actions** de GitHub. Aucun serveur Next.js n'est nécessaire pour héberger cet export.
+
+Dans les paramètres du dépôt GitHub, ouvrez **Settings → Pages** et sélectionnez **GitHub Actions** comme source de publication. L'application sera disponible à l'adresse [https://macenteno63.github.io/BarcodeGen/](https://macenteno63.github.io/BarcodeGen/) après le premier déploiement réussi.
+
+Le build destiné à Pages utilise le préfixe `/BarcodeGen` pour les ressources Next.js. Le serveur de développement local et `pnpm build` sans la variable `GITHUB_PAGES` restent à la racine. Pour vérifier localement l'export destiné à Pages :
+
+```bash
+GITHUB_PAGES=true pnpm build
+```
