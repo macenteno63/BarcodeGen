@@ -4,7 +4,7 @@ import JsBarcode from "jsbarcode";
 import { useEffect, useRef, useState } from "react";
 
 const STORAGE_KEY = "bibliotheque.nom";
-const LABELS_PER_PAGE = 24;
+const LABELS_PER_PAGE = 48;
 const BARCODE_OPTIONS = {
   format: "CODE128",
   displayValue: false,
@@ -234,7 +234,7 @@ export default function Home() {
         </div>
         {labels.length > 0 && (
           <p className="screen-only mt-4 text-center text-lg text-slate-600">
-            {pages.length} page{pages.length > 1 ? "s" : ""} A4 · 24 étiquettes maximum par page
+            {pages.length} page{pages.length > 1 ? "s" : ""} A4 · {LABELS_PER_PAGE} étiquettes maximum par page
           </p>
         )}
       </section>

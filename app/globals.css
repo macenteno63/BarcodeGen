@@ -12,8 +12,8 @@ body {
 }
 
 .label-paper {
-  width: 60mm;
-  height: 30mm;
+  width: 40mm;
+  height: 20mm;
   box-sizing: border-box;
   background: white;
   color: black;
@@ -21,8 +21,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5mm;
-  padding: 1.5mm 2mm;
+  gap: 0.25mm;
+  padding: 1mm 1.5mm;
   overflow: hidden;
   text-align: center;
 }
@@ -30,8 +30,8 @@ body {
 .label-paper svg {
   display: block;
   width: 100%;
-  height: 16mm;
-  flex: 0 0 16mm;
+  height: 10mm;
+  flex: 0 0 10mm;
 }
 
 .label-name,
@@ -44,20 +44,20 @@ body {
 }
 
 .label-name {
-  font-size: 10pt;
+  font-size: 8pt;
   font-weight: 700;
 }
 
 .label-code {
-  font-size: 8pt;
+  font-size: 7pt;
   letter-spacing: 0.03em;
 }
 
 .sheet-page {
   display: grid;
   width: min(100%, 200mm);
-  grid-template-columns: repeat(auto-fit, minmax(60mm, 1fr));
-  gap: 4mm 5mm;
+  grid-template-columns: repeat(auto-fit, minmax(40mm, 1fr));
+  gap: 3mm 5mm;
   margin-inline: auto;
   padding: 4mm;
   background: white;
@@ -102,10 +102,10 @@ body {
   .sheet-page {
     display: grid !important;
     width: 190mm !important;
-    height: 268mm;
-    grid-template-columns: repeat(3, 60mm);
-    grid-template-rows: repeat(8, 30mm);
-    gap: 4mm 5mm;
+    height: 273mm;
+    grid-template-columns: repeat(4, 40mm);
+    grid-template-rows: repeat(12, 20mm);
+    gap: 3mm 10mm;
     align-content: start;
     margin: 0 !important;
     padding: 0 !important;
@@ -121,8 +121,8 @@ body {
 
   .sheet-page .label-paper {
     display: flex !important;
-    width: 60mm;
-    height: 30mm;
+    width: 40mm;
+    height: 20mm;
     margin: 0;
     border: 0 !important;
     box-shadow: none !important;

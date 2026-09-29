@@ -20,7 +20,7 @@ Ouvrez ensuite [http://localhost:3000](http://localhost:3000).
 3. Appuyez sur **Entrée** ou sur **Ajouter à la planche**. Le champ du code se vide et garde le focus pour le livre suivant.
 4. Répétez l'opération, puis cliquez sur **Imprimer la planche**. Le bouton **Tout effacer** vide la planche.
 
-La planche peut contenir plusieurs pages. Chaque page A4 comprend jusqu'à **24 étiquettes**, disposées en trois colonnes et huit rangées. Chaque étiquette mesure **60 × 30 mm**. Le nom de la bibliothèque est conservé sur chaque étiquette au moment de son ajout ; le changer ensuite n'altère pas les étiquettes déjà ajoutées.
+La planche peut contenir plusieurs pages. Chaque page A4 comprend jusqu'à **48 étiquettes**, disposées en quatre colonnes et douze rangées. Chaque étiquette mesure **40 × 20 mm**. Le nom de la bibliothèque est conservé sur chaque étiquette au moment de son ajout ; le changer ensuite n'altère pas les étiquettes déjà ajoutées.
 
 Pour conserver les dimensions à l'impression, choisissez le papier **A4 en portrait**, une échelle de **100 %**, et désactivez les en-têtes et pieds de page du navigateur si celui-ci les propose. Vérifiez l'aperçu avant d'imprimer sur une planche d'étiquettes.
 
